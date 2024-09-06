@@ -1,0 +1,41 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.event-details {
+    display: flex;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image img {
+    width: 150px;
+    height: 150px;
+}
+
+.details {
+    margin-left: 20px;
+}
+
+.gallery {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.gallery-images {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery-images img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ccc;
+}
