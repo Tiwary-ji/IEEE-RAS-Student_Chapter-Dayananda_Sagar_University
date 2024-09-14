@@ -1,0 +1,194 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+/* Hero Section Styles */
+.hero {
+    background: url('../Images/Logo&Backgrounds/hero-background.jpg'); /* Ensure the path is correct */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 50px;
+    height: 83vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative; /* Needed for positioning the blur effect */
+    overflow: hidden; /* Ensures the blur doesn't overflow the hero section */
+
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit; /*Copy the background image*/
+    filter: blur(5px); /* Apply blur effect */
+    z-index: 1; /* Place it behind the content */
+}
+
+.hero-content {
+    position: relative; /* Position relative to hero for z-index to work */
+    z-index: 2; /* Ensure content is above the blur effect */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.about {
+    background: linear-gradient(135deg, #f0f8ff, #e8f0ff);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100vh; /*Full viewport height*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #004080;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 5;
+    margin-top: 25px;
+}
+
+.about h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #ff6b6b;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: calc(100% - 80px); /*Adjust height based on header size*/
+}
+
+.about-text {
+    /* flex: 1; */
+    padding: 20px;
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-right: 20px;
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+}
+
+.about-text:hover {
+    transform: translateY(-10px);
+}
+
+.about-image {
+    text-align: center;
+    max-width: 50%;
+}
+
+.about-image img {
+    max-width: 95%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    margin: 10px;
+}
+.footer-left h3, .footer-center h3, .footer-right h3 {
+    margin-bottom: 10px;
+}
+.footer-left p, .footer-right p {
+    margin: 5px 0;
+}
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.social-links li {
+    margin: 0 10px;
+}
+.social-links a{
+    width: 30px;
+    height: 30px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none; */
+}
+.social-links a img { 
+    width: 30px;
+    height: 30px;
+}
+.social-links a:hover {
+    background: none;
+}
+.footer-bottom {
+    border-top: 1px solid #575757;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+

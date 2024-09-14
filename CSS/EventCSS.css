@@ -1,0 +1,125 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#e2d5d6;
+}
+
+.event-details {
+    display: flex;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-image: url('../Images/Logo&Backgrounds/EventsBckgrd.jpg');
+    background-size: 100% 100%;
+    
+}
+
+.image img {
+    width: 340px;
+    height: 415px;
+}
+
+.details {
+    margin-left: 20px;
+}
+
+
+/* Basic styles for the gallery section */
+.gallery {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-images img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+/* Overlay that appears on hover */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.load-more-text {
+    color: white;
+    font-size: 1.5em;
+    display: none;
+}
+
+/* Hover effect: Darkens the section and shows text */
+.gallery:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+}
+
+.gallery:hover .load-more-text {
+    display: block;
+}
+
+/* Cursor pointer for the clickable area */
+.gallery {
+    cursor: pointer;
+}
+
+.event-details:hover {
+    box-shadow: -15px -15px 10px #c49494;
+    transition: box-shadow 0.3s ease-in;
+}
+
+
+
+@media (max-width: 440px){
+     /* Make the event details section responsive */
+     .event-details {
+        width: 88%;
+        margin: 15px;
+        padding: 20px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        display: table-row;
+    }
+
+    .image img{
+        margin: 10%;
+    }
+
+    .event-details h3 {
+        font-size: 1.4em;
+    }
+
+    .event-details p {
+        font-size: 0.9em;
+    }
+
+    /* Adjust gallery images for smaller screens */
+    .gallery-images img {
+        width: 100px;
+        height: 70px;
+    }
+
+    /* Adjust the overlay text size */
+    .load-more-text {
+        font-size: 1.2em;
+    }
+}    
+

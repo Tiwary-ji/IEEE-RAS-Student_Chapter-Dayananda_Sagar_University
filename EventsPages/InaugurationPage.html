@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inauguration</title>
+    <link rel="stylesheet" href="../CSS/EventCSS.css">
+    <link rel="stylesheet" href="../CSS/MainCSS.css">
+    
+    <script>
+    // Add click event to the gallery section to open a link
+        document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('gallery').addEventListener('click', function() {
+        window.location.href = 'https://drive.google.com/drive/folders/1l8A9TzQcjotw-QwSy9i7ZQJoGE-c-k2I'; // Replace with the desired link
+        });
+    });
+
+    </script>
+</head>
+<body>
+    <header>
+        <!-- <script src="script.js"></script> -->
+        <link rel="stylesheet" href="../CSS/Header&ResponsiveCSS.css">
+        <div class="container">
+            <div class="specific-region">
+            <div class="logo">
+                <a href="https://www.ieee-ras.org/"><img src="../Images/Logo&Backgrounds/ieee-logo.jpg" alt="IEEE Logo"/> <!-- Path to IEEE logo --></a>
+                
+                <a href="https://www.dsu.edu.in/">
+                <img href="https://www.dsu.edu.in/" src="../Images/Logo&Backgrounds/logo-blue.png" alt="Dayananda Sagar University Logo"/> <!-- Path to DSU logo -->
+                </a>
+            </div>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">About Us</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Sponsors</a></li>
+                    <li class="dropdown">
+                        <a href="../Execom2024.html#team" class="dropdown">ExeCom</a> 
+                        <ul class="dropdown_content" id="excom-dropdown">
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=MEMRA024">Join Us</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <img src="../Images/Logo&Backgrounds/hamburger.png" alt="Menu">
+                </div>
+            </nav>
+        </div>
+        <script src="../script.js"></script>
+    </header>
+
+
+    <section class="event-details">
+        <div class="image">
+            <img src="../Images/Events/Inauguration/InaugurationCeremonyCISRAS.jpeg" alt="Event Image">
+        </div>
+        <div class="details" style="width: 663px;">
+            <h2>Inauguration Event</h2>
+            <p><strong>Date:</strong> June 3rd, 2024</p>
+            <p><strong>Time:</strong> 09:00 AM - 4:00 PM</p>
+            <p><strong>Location:</strong> Lecture Hall 2</p>
+            <p>The Department of Computer Science Engineering (AI-ML) at Dayananda Sagar University proudly hosted the inaugural event for the <strong>IEEE Robotics and Automation Society (RAS)</strong> and the Computational Intelligence Society (CIS) on 3rd June 2024. This landmark occasion highlighted the university's commitment to cutting-edge research and innovation in robotics, automation, and artificial intelligence. Esteemed faculty, industry experts, and enthusiastic students gathered for the event, which included an insightful technical talk by renowned speakers, <strong>Dr. Sumana Ashok</strong> and <strong>Dr. Mangala Gowri</strong>. The event celebrated collaboration, knowledge exchange, and the promise of shaping the future through transformative technologies.</p>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery" style="padding-top:60px;padding-bottom: 60px;">
+        <div class="gallery-images">
+            <img src="../Images/Events/Inauguration/InaugG2.jpg" alt="Gallery Image 2">
+            <img src="../Images/Events/Inauguration/InaugG3.jpg" alt="Gallery Image 3">
+            <img src="../Images/Events/Inauguration/InaugG1.jpg" alt="Gallery Image 1">
+            <img src="../Images/Events/Inauguration/InaugG4.jpg" alt="Gallery Image 4">
+            <img src="../Images/Events/Inauguration/InaugG5.jpg" alt="Gallery Image 5">
+            <img src="../Images/Events/Inauguration/InaugG6.jpg" alt="Gallery Image 6">
+        </div>
+        <div class="overlay">
+            <span class="load-more-text">Load More</span>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="footer-container" id="contact">
+            <div class="footer-left">
+                <h3>Contact Us</h3>
+                <p>Address: Dayananda Sagar University Devarakaggalahalli, Harohalli, Kanakapura Road, Ramanagara Dt., Bengaluru – 562 112</p>
+            </div>
+            <div class="footer-center">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#"><img src="../Images/Logo&Backgrounds/insta.png" alt="Instagram"/></a></li>
+                    <li><a href="https://www.linkedin.com/company/ieee-ras-sbc-dsu-950339314/posts/?feedView=all"><img src="../Images/Logo&Backgrounds/linkdin.png" alt="LinkedIn"/></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 IEEE RAS Student Chapter. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
